@@ -6,14 +6,18 @@ import org.springframework.stereotype.Repository
 @Repository
 class GitInfoRepo {
 
+<<<<<<< HEAD
     val endpointList: List<String> = listOf("gitCommitAmend", "gitRebase", "gitCherry-Pick");
+=======
+    val endpointList: List<String> = listOf("gitCommitAmend", "gitCherry-Pick")
+>>>>>>> 7149b7a ([bugfix] remove warnings)
 
     fun getInfoAmend(): CommandDescription {
         return CommandDescription(
                 "Git Commit Amend",
                 "git commit --amend",
                 "Allows the user to modify the last committed commit."
-        );
+        )
     }
 
     fun getInfoRebase(): CommandDescription
