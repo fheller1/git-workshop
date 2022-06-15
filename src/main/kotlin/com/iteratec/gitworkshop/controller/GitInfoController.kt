@@ -29,5 +29,8 @@ class GitInfoController {
     @GetMapping("gitRebase")
     fun getInfoRebase() : CommandDescription {
         return gitInfoRepo.getInfoRebase()
+    @GetMapping("gitCherry-Pick")
+    fun getInfoCherryPick() : CommandDescription {
+        return gitInfoRepo.getInfoCherryPick()
     }
 }
